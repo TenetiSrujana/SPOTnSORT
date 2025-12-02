@@ -1,0 +1,21 @@
+// src/components/BubblesBackground.jsx
+import React from "react";
+
+const BubblesBackground = () => {
+  return (
+    <div
+      className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
+      style={{
+        background: `
+          linear-gradient(135deg, #202634ff 0%, #6a82a6ff 50%, #2b384bff 100%),
+          url('https://www.transparenttextures.com/patterns/asfalt-light.png')
+        `,
+        backgroundSize: "cover, 300px",
+        backgroundBlendMode: "overlay",
+        opacity: 0.85,
+      }}
+    />
+  );
+};
+
+export default BubblesBackground;
