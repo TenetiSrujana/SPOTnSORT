@@ -1,0 +1,47 @@
+/* ✅ src/styles/main.css */
+
+/* Bubble Background */
+.bubbles-bg,
+.bubbles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bubbles li {
+  position: absolute;
+  bottom: -100px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: rise 6s linear infinite;
+}
+
+.bubbles li:nth-child(1) { left: 5%; animation-duration: 5s; width: 15px; height: 15px; }
+.bubbles li:nth-child(2) { left: 15%; animation-duration: 6s; width: 20px; height: 20px; }
+.bubbles li:nth-child(3) { left: 25%; animation-duration: 7s; width: 25px; height: 25px; }
+.bubbles li:nth-child(4) { left: 35%; animation-duration: 5.5s; width: 18px; height: 18px; }
+.bubbles li:nth-child(5) { left: 50%; animation-duration: 6.5s; width: 22px; height: 22px; }
+.bubbles li:nth-child(6) { left: 65%; animation-duration: 7s; width: 20px; height: 20px; }
+.bubbles li:nth-child(7) { left: 75%; animation-duration: 5.2s; width: 18px; height: 18px; }
+.bubbles li:nth-child(8) { left: 85%; animation-duration: 6.8s; width: 25px; height: 25px; }
+.bubbles li:nth-child(9) { left: 92%; animation-duration: 7.3s; width: 22px; height: 22px; }
+.bubbles li:nth-child(10) { left: 40%; animation-duration: 6.2s; width: 19px; height: 19px; }
+
+@keyframes rise {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-120vh) scale(0.5); opacity: 0; }
+}
+
+/* Ensure everything else transparent so bubbles show */
+body, #root {
+  background-color: transparent !important;
+}
