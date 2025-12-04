@@ -1,5 +1,5 @@
 // backend/controllers/authController.js
-import User from "../models/user.js"; // Mongoose model for users
+import User from "../models/User.js"; // Mongoose model for users
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 

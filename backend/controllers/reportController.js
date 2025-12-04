@@ -1,5 +1,5 @@
 import Report from "../models/Report.js";
-import User from "../models/user.js"; // To fetch authority info
+import User from "../models/User.js";
 
 // ================================
 // Create new report (User Side)

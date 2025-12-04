@@ -1,36 +1,37 @@
 import mongoose from "mongoose";
 
 const reportSchema = new mongoose.Schema({
-  userEmail: String,
+  userEmail: { type: String, required: true },
   name: String,
   phone: String,
   problem: String,
   subtype: String,
   priority: String,
   description: String,
-  area: String,
+  area: Object,
   lat: Number,
   lng: Number,
   photo: String,
+
   status: { type: String, default: "Pending" },
+
   comment: String,
-  scheduledAt: Date,
+  scheduledAt: String,
   estimatedDays: Number,
   resolvedPic: String,
-  userRating: { type: Number, default: 0 },
 
-  // 👇 NEW nested authority info field
   authorityInfo: {
-    _id: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+    _id: String,
     name: String,
-    email: String,
-    phone: String,
     role: String,
-    idCard: String, // optional
+    phone: String,
+    idCard: String,
+    email: String,
   },
 
-  createdAt: Date,
-  updatedAt: Date,
+  createdAt: { type: Date, default: Date.now },
+  updatedAt: { type: Date, default: Date.now },
+  userRating: { type: Number, default: 0 },
 });
 
 export default mongoose.model("Report", reportSchema);
