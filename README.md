@@ -106,6 +106,8 @@ npm start
 - Advanced analytics dashboards
 
 ---
+Project developed for academic learning and civic-tech experimentation
+---
 
 ## Author
 
@@ -113,3 +115,5 @@ Teneti Srujana
 
 Artificial Intelligence and Data Science  
 Chaitanya Bharathi Institute of Technology (CBIT)
+
+
