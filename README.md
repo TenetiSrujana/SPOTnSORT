@@ -77,6 +77,18 @@ SPOTnSORT
 
 ---
 
+## How to Run the Project
+
+### Start Backend
+Open terminal and run:
+cd backend
+node server.js
+
+### Start Frontend
+Open terminal and run:
+cd frontend
+npm start
+
 ## Key Highlights
 
 - Transparent civic issue tracking
