@@ -58,7 +58,7 @@ Tools
 5. Issue progress is tracked through dashboards.
 6. Users receive updates and reward points for participation.
 
-The workflow includes user reporting, automatic assignment, dashboard tracking, analytics, and a rewards system for engagement. :contentReference[oaicite:1]{index=1}
+The workflow includes user reporting, automatic assignment, dashboard tracking, analytics, and a rewards system for engagement.
 
 ---
 
@@ -66,13 +66,9 @@ The workflow includes user reporting, automatic assignment, dashboard tracking, 
 SPOTnSORT
 │
 ├── frontend
-│
 ├── backend
-│
 ├── package-lock.json
-│
 ├── .gitignore
-│
 └── README.md
 
 ---
@@ -80,18 +76,16 @@ SPOTnSORT
 ## How to Run the Project
 
 ### Start Backend
-Open terminal and run:
 
 cd backend
-
 node server.js
 
 ### Start Frontend
-Open terminal and run:
 
 cd frontend
-
 npm start
+
+---
 
 ## Key Highlights
 
