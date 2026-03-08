@@ -115,4 +115,4 @@ Artificial Intelligence and Data Science
 Chaitanya Bharathi Institute of Technology (CBIT)
 
 ---
-Project developed for academic learning and civic-tech experimentation
+Repository maintained for learning and civic-tech experimentation.
