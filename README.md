@@ -78,7 +78,7 @@ SPOTnSORT
 ### Start Backend
 
 cd backend
-node server.js
+npm run dev
 
 ### Start Frontend
 
